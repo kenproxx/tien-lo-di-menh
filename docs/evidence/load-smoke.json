@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-30T21:45:40.825Z",
+  "scenario": "20 authenticated active auto-combat actors; shared village monsters; 60s smoke only",
+  "clients": 20,
+  "seconds": 60,
+  "snapshots": 12542,
+  "snapshotIntervalMs": {
+    "p50": 100.75606200000038,
+    "p95": 105.8154820000018,
+    "p99": 110.47990699999991
+  },
+  "kills": 28,
+  "errors": 0,
+  "notValidated": [
+    "500 CCU",
+    "30 minute tiers",
+    "2h soak",
+    "production bandwidth/database cost",
+    "mobile devices"
+  ],
+  "serverMetrics": {
+    "ticks": 1799,
+    "maxTickMs": 5.463590999999724,
+    "commands": 35,
+    "errors": 0,
+    "bytesSent": 74701312,
+    "saturations": 0,
+    "tickMs": {
+      "p50": 0.046537000001990236,
+      "p95": 0.429602000003797,
+      "p99": 1.728423999993538
+    },
+    "players": 20,
+    "monsters": 72,
+    "heapBytes": 44025864,
+    "db": {
+      "total": 12,
+      "idle": 12,
+      "waiting": 0
+    },
+    "pendingCommands": 0
+  },
+  "baselineMetrics": {
+    "ticks": 497,
+    "maxTickMs": 4.529489999997168,
+    "commands": 1,
+    "errors": 0,
+    "bytesSent": 181852,
+    "saturations": 0,
+    "tickMs": {
+      "p50": 0.0312980000016978,
+      "p95": 0.14493099999890546,
+      "p99": 1.5405639999989944
+    },
+    "players": 1,
+    "monsters": 72,
+    "heapBytes": 41827856,
+    "db": {
+      "total": 1,
+      "idle": 1,
+      "waiting": 0
+    },
+    "pendingCommands": 0
+  },
+  "capacityClaim": false
+}

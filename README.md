@@ -29,7 +29,9 @@ pnpm run build
 pnpm run load:smoke    # start world first
 ```
 
-Controls: A/D or arrows move, W/up jump, Space attack, 1–4 skills, R/T potions. Touch buttons and tap monsters on mobile browser. NPCs are near map entrance; return to them for shop, quest rewards, branches, craft and travel.
+Cloud setup tự động, có thể chạy lại: `bash scripts/cloud-setup.sh`.
+
+Controls: A/D or arrows move, W/up jump, Space attack, 1–4 skills, F pháp bảo, R/T potions. Touch buttons and tap monsters on mobile browser. NPCs are near map entrance; return to them for shop, quest rewards, branches, craft and travel.
 
 ## Deployment
-[Deployment runbook](docs/runbooks/deployment.md). Vercel hosts web/API proxy, a VPS runs persistent game world. External Vercel/VPS creation, paid services and app store release have not occurred.
+[Deployment runbook](docs/runbooks/deployment.md). Vercel hosts web/API proxy, a VPS runs persistent game world. Docker world image đã build và kiểm readiness local. Vercel/VPS thực tế chưa tạo do thiếu kết nối tài khoản; dự án Android/iOS có source nhưng chưa có bản cài được nghiệm thu. Xem [mobile runbook](docs/runbooks/mobile.md) và [bảng cân bằng v1](docs/evidence/balance-v1.md).

@@ -1,0 +1,9 @@
+{
+  "characters": 73,
+  "operations": 222,
+  "ledger": 261,
+  "uint64Violations": 0,
+  "date": "2026-09-30T21:45:00Z",
+  "scope": "local fixture backup restored to isolated database",
+  "backupSha256": "2152aef20aa52448ffe4525dd9f82a570b8c88b80dfcde5ff2ce62f49dfdbc3b"
+}

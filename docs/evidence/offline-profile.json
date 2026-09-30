@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-30T21:45:45.262Z",
+  "scenario": "one 8-hour offline job, generated local level-60 fixture",
+  "durationMs": 318.583524,
+  "result": {
+    "seconds": 28800,
+    "kills": 14400,
+    "events": 14400,
+    "reason": "time",
+    "exp": "504000",
+    "coins": "100800",
+    "efficiency": 70
+  },
+  "capacityClaim": false
+}
