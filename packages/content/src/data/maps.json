@@ -1,0 +1,110 @@
+[
+  {
+    "id": "map-0",
+    "name": "Thanh Khê Thôn",
+    "minLevel": 1,
+    "width": 2400,
+    "ground": 420,
+    "safe": true,
+    "element": "wood"
+  },
+  {
+    "id": "map-1",
+    "name": "Trúc Phong Lâm",
+    "minLevel": 3,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "wood"
+  },
+  {
+    "id": "map-2",
+    "name": "Lang Nha Cốc",
+    "minLevel": 8,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "earth"
+  },
+  {
+    "id": "map-3",
+    "name": "Thiên Mệnh Đài",
+    "minLevel": 18,
+    "width": 2400,
+    "ground": 420,
+    "safe": true,
+    "element": "light"
+  },
+  {
+    "id": "map-4",
+    "name": "Lạc Hà Sơn",
+    "minLevel": 30,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "wind"
+  },
+  {
+    "id": "map-5",
+    "name": "Kim Đan Bí Cảnh",
+    "minLevel": 60,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "fire"
+  },
+  {
+    "id": "map-6",
+    "name": "Nguyên Anh Cổ Địa",
+    "minLevel": 100,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "ice"
+  },
+  {
+    "id": "map-7",
+    "name": "Hóa Thần Thiên Uyên",
+    "minLevel": 150,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "lightning"
+  },
+  {
+    "id": "map-8",
+    "name": "Hư Không Hải",
+    "minLevel": 220,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "dark"
+  },
+  {
+    "id": "map-9",
+    "name": "Hợp Đạo Cổ Thành",
+    "minLevel": 300,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "metal"
+  },
+  {
+    "id": "map-10",
+    "name": "Đại Thừa Tiên Vực",
+    "minLevel": 400,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "water"
+  },
+  {
+    "id": "map-11",
+    "name": "Độ Kiếp Thiên Đỉnh",
+    "minLevel": 500,
+    "width": 2400,
+    "ground": 420,
+    "safe": false,
+    "element": "light"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "board-0",
+    "name": "Thiên Kiếm Trận",
+    "effect": "attack",
+    "bps": 1500,
+    "duration": 1200,
+    "radius": 320,
+    "cost": "30"
+  },
+  {
+    "id": "board-1",
+    "name": "Kim Cương Trận",
+    "effect": "defense",
+    "bps": 1500,
+    "duration": 1200,
+    "radius": 320,
+    "cost": "30"
+  },
+  {
+    "id": "board-2",
+    "name": "Hồi Xuân Trận",
+    "effect": "heal",
+    "bps": 1500,
+    "duration": 1200,
+    "radius": 320,
+    "cost": "30"
+  },
+  {
+    "id": "board-3",
+    "name": "Tụ Linh Trận",
+    "effect": "cultivation",
+    "bps": 1500,
+    "duration": 1200,
+    "radius": 320,
+    "cost": "30"
+  },
+  {
+    "id": "board-4",
+    "name": "Hàn Sương Trận",
+    "effect": "slow",
+    "bps": 1500,
+    "duration": 1200,
+    "radius": 320,
+    "cost": "30"
+  },
+  {
+    "id": "board-5",
+    "name": "Thanh Tâm Trận",
+    "effect": "ccResist",
+    "bps": 1500,
+    "duration": 1200,
+    "radius": 320,
+    "cost": "30"
+  }
+]

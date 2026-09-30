@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pet-0",
+    "name": "Linh Hồ",
+    "element": "fire",
+    "attackBps": 1500,
+    "hp": "120",
+    "price": "500",
+    "skill": "burn"
+  },
+  {
+    "id": "pet-1",
+    "name": "Thanh Loan",
+    "element": "wind",
+    "attackBps": 1750,
+    "hp": "160",
+    "price": "750",
+    "skill": "speed"
+  },
+  {
+    "id": "pet-2",
+    "name": "Huyền Quy",
+    "element": "water",
+    "attackBps": 2000,
+    "hp": "200",
+    "price": "1000",
+    "skill": "shield"
+  },
+  {
+    "id": "pet-3",
+    "name": "Bạch Hổ",
+    "element": "metal",
+    "attackBps": 2250,
+    "hp": "240",
+    "price": "1250",
+    "skill": "attack"
+  },
+  {
+    "id": "pet-4",
+    "name": "Lôi Ưng",
+    "element": "lightning",
+    "attackBps": 2500,
+    "hp": "280",
+    "price": "1500",
+    "skill": "stun"
+  },
+  {
+    "id": "pet-5",
+    "name": "Mộc Linh",
+    "element": "wood",
+    "attackBps": 2750,
+    "hp": "320",
+    "price": "1750",
+    "skill": "heal"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "name": "tien-lo-di-menh",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "build": "pnpm --filter @tien-lo/client build && tsx scripts/build-client.ts && pnpm --filter @tien-lo/web build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "db:migrate": "tsx packages/database/src/migrate.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "load:smoke": "tsx tests/load/smoke.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ws": "8.22.0",
+    "zod": "4.6.5",
+    "pg": "8.16.3",
+    "drizzle-orm": "0.45.3",
+    "better-auth": "1.7.6"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "tsx": "4.20.6",
+    "vitest": "5.0.3",
+    "@types/node": "24.10.0",
+    "@types/ws": "8.18.1",
+    "@types/pg": "8.15.5",
+    "@playwright/test": "1.63.0"
+  }
+}

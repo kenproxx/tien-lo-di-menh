@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+.env
+.env.*
+!.env.example
+.playwright/
+test-results/
+playwright-report/
+.superpowers/
+*.log
+apps/web/public/game/
+*.tsbuildinfo
+.pnpm-store/

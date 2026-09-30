@@ -1,0 +1,386 @@
+[
+  {
+    "id": "system-0",
+    "name": "Điểm Danh",
+    "description": "Ghi lại từng ngày tu hành.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "checkin",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "checkin",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "checkin",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "checkin",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "checkin",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-24"
+  },
+  {
+    "id": "system-1",
+    "name": "Báo Thù",
+    "description": "Trừ gian, báo ân, hóa giải nhân quả.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "kills",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "kills",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "kills",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "kills",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "kills",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-25"
+  },
+  {
+    "id": "system-2",
+    "name": "Nghịch Mệnh",
+    "description": "Đối diện thử thách vượt cảnh giới.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "challenge",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "challenge",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "challenge",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "challenge",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "challenge",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-26"
+  },
+  {
+    "id": "system-3",
+    "name": "Vạn Giới Thương Nhân",
+    "description": "Trao đổi kỳ vật giữa các cõi.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "trade",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "trade",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "trade",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "trade",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "trade",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-27"
+  },
+  {
+    "id": "system-4",
+    "name": "Đan Đạo",
+    "description": "Luyện đan và thấu hiểu dược tính.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "craft",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "craft",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "craft",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "craft",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "craft",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-28"
+  },
+  {
+    "id": "system-5",
+    "name": "Chiến Thần",
+    "description": "Trải qua chiến đấu để trưởng thành.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "kills",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "kills",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "kills",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "kills",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "kills",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-29"
+  },
+  {
+    "id": "system-6",
+    "name": "Ngự Thú",
+    "description": "Kết nối cùng linh thú.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "pet",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "pet",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "pet",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "pet",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "pet",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-30"
+  },
+  {
+    "id": "system-7",
+    "name": "Thiên Cơ",
+    "description": "Giải mã dấu vết thiên cơ.",
+    "levels": [
+      {
+        "level": 1,
+        "points": 100,
+        "objective": "hidden",
+        "required": 5,
+        "rewardCoins": "500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 2,
+        "points": 200,
+        "objective": "hidden",
+        "required": 10,
+        "rewardCoins": "1000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 3,
+        "points": 300,
+        "objective": "hidden",
+        "required": 15,
+        "rewardCoins": "1500",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 4,
+        "points": 400,
+        "objective": "hidden",
+        "required": 20,
+        "rewardCoins": "2000",
+        "rewardItem": "spirit-stone"
+      },
+      {
+        "level": 5,
+        "points": 500,
+        "objective": "hidden",
+        "required": 25,
+        "rewardCoins": "2500",
+        "rewardItem": "spirit-stone"
+      }
+    ],
+    "hiddenQuest": "hidden-31"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "status": "autonomous initial tuning; not playtested",
+  "offlineEfficiencyBps": 7000,
+  "maxOfflineSeconds": 28800,
+  "bagSlots": 40,
+  "claimBoxSlots": 100,
+  "claimBoxExpiryDays": 7,
+  "lootRadius": 800,
+  "contributionThresholdBps": 100,
+  "deletePolicy": "Cancel offline through settlement, return active listings to claims, disallow pending direct trade, require empty claims before deletion.",
+  "rounding": {
+    "damage": "floor; positive minimum 1",
+    "cost": "ceil",
+    "reward": "floor",
+    "marketFee": "ceil",
+    "time": "ceil; positive minimum 1 tick"
+  },
+  "npcExchange": "not offered",
+  "qualityMultipliersBps": [
+    10000,
+    12000,
+    15000,
+    19000,
+    24000,
+    30000
+  ]
+}

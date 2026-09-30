@@ -1,0 +1,1938 @@
+[
+  {
+    "id": "talent-f-01",
+    "tier": "F",
+    "name": "Sơ Kiếm Tâm",
+    "description": "Công kích tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-02",
+    "tier": "F",
+    "name": "Sơ Thiết Cốt",
+    "description": "Sinh lực tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-03",
+    "tier": "F",
+    "name": "Sơ Linh Hải",
+    "description": "Linh lực tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-04",
+    "tier": "F",
+    "name": "Sơ Bất Động",
+    "description": "Giáp tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-05",
+    "tier": "F",
+    "name": "Sơ Thiên Nhãn",
+    "description": "Chí mạng tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-06",
+    "tier": "F",
+    "name": "Sơ Huyết Mạch",
+    "description": "Hút máu tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-07",
+    "tier": "F",
+    "name": "Sơ Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-08",
+    "tier": "F",
+    "name": "Sơ Tụ Linh",
+    "description": "Tu vi tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-09",
+    "tier": "F",
+    "name": "Sơ Tiết Linh",
+    "description": "Giảm tiêu hao MP tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "manaReduction",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "manaReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-10",
+    "tier": "F",
+    "name": "Sơ Lưu Quang",
+    "description": "Giảm hồi chiêu tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cooldownReduction",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "cooldownReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-11",
+    "tier": "F",
+    "name": "Sơ Diệu Thủ",
+    "description": "Sản lượng chế tạo tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "craft",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "craft",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-12",
+    "tier": "F",
+    "name": "Sơ Ngự Linh",
+    "description": "Công kích linh thú tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "pet",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "pet",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-13",
+    "tier": "F",
+    "name": "Sơ Trận Tâm",
+    "description": "Hiệu lực trận pháp tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "board",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "board",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-14",
+    "tier": "F",
+    "name": "Sơ Hồi Xuân",
+    "description": "Hiệu quả hồi phục tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "heal",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "heal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-15",
+    "tier": "F",
+    "name": "Sơ Địa Mạch",
+    "description": "Nguyên liệu thu thập tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "gather",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "gather",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-16",
+    "tier": "F",
+    "name": "Sơ Hộ Đạo",
+    "description": "Lá chắn tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "shield",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "shield",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-17",
+    "tier": "F",
+    "name": "Sơ Ngũ Hành",
+    "description": "Kháng nguyên tố tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "resistance",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "resistance",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-18",
+    "tier": "F",
+    "name": "Sơ Truy Phong",
+    "description": "Tốc độ đánh tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attackSpeed",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "attackSpeed",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-19",
+    "tier": "F",
+    "name": "Sơ Kính Tâm",
+    "description": "Phản sát thương tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "reflect",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "reflect",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-f-20",
+    "tier": "F",
+    "name": "Sơ Thương Đạo",
+    "description": "Thu nhập NPC tăng 2%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "trade",
+        "bps": 200
+      }
+    ],
+    "stackGroup": "trade",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-01",
+    "tier": "E",
+    "name": "Thanh Kiếm Tâm",
+    "description": "Công kích tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-02",
+    "tier": "E",
+    "name": "Thanh Thiết Cốt",
+    "description": "Sinh lực tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-03",
+    "tier": "E",
+    "name": "Thanh Linh Hải",
+    "description": "Linh lực tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-04",
+    "tier": "E",
+    "name": "Thanh Bất Động",
+    "description": "Giáp tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-05",
+    "tier": "E",
+    "name": "Thanh Thiên Nhãn",
+    "description": "Chí mạng tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-06",
+    "tier": "E",
+    "name": "Thanh Huyết Mạch",
+    "description": "Hút máu tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-07",
+    "tier": "E",
+    "name": "Thanh Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-08",
+    "tier": "E",
+    "name": "Thanh Tụ Linh",
+    "description": "Tu vi tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-09",
+    "tier": "E",
+    "name": "Thanh Tiết Linh",
+    "description": "Giảm tiêu hao MP tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "manaReduction",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "manaReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-10",
+    "tier": "E",
+    "name": "Thanh Lưu Quang",
+    "description": "Giảm hồi chiêu tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cooldownReduction",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "cooldownReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-11",
+    "tier": "E",
+    "name": "Thanh Diệu Thủ",
+    "description": "Sản lượng chế tạo tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "craft",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "craft",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-12",
+    "tier": "E",
+    "name": "Thanh Ngự Linh",
+    "description": "Công kích linh thú tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "pet",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "pet",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-13",
+    "tier": "E",
+    "name": "Thanh Trận Tâm",
+    "description": "Hiệu lực trận pháp tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "board",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "board",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-14",
+    "tier": "E",
+    "name": "Thanh Hồi Xuân",
+    "description": "Hiệu quả hồi phục tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "heal",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "heal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-15",
+    "tier": "E",
+    "name": "Thanh Địa Mạch",
+    "description": "Nguyên liệu thu thập tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "gather",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "gather",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-16",
+    "tier": "E",
+    "name": "Thanh Hộ Đạo",
+    "description": "Lá chắn tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "shield",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "shield",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-17",
+    "tier": "E",
+    "name": "Thanh Ngũ Hành",
+    "description": "Kháng nguyên tố tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "resistance",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "resistance",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-18",
+    "tier": "E",
+    "name": "Thanh Truy Phong",
+    "description": "Tốc độ đánh tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attackSpeed",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "attackSpeed",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-19",
+    "tier": "E",
+    "name": "Thanh Kính Tâm",
+    "description": "Phản sát thương tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "reflect",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "reflect",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-e-20",
+    "tier": "E",
+    "name": "Thanh Thương Đạo",
+    "description": "Thu nhập NPC tăng 4%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "trade",
+        "bps": 400
+      }
+    ],
+    "stackGroup": "trade",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-01",
+    "tier": "D",
+    "name": "Huyền Kiếm Tâm",
+    "description": "Công kích tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-02",
+    "tier": "D",
+    "name": "Huyền Thiết Cốt",
+    "description": "Sinh lực tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-03",
+    "tier": "D",
+    "name": "Huyền Linh Hải",
+    "description": "Linh lực tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-04",
+    "tier": "D",
+    "name": "Huyền Bất Động",
+    "description": "Giáp tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-05",
+    "tier": "D",
+    "name": "Huyền Thiên Nhãn",
+    "description": "Chí mạng tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-06",
+    "tier": "D",
+    "name": "Huyền Huyết Mạch",
+    "description": "Hút máu tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-07",
+    "tier": "D",
+    "name": "Huyền Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-08",
+    "tier": "D",
+    "name": "Huyền Tụ Linh",
+    "description": "Tu vi tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-09",
+    "tier": "D",
+    "name": "Huyền Tiết Linh",
+    "description": "Giảm tiêu hao MP tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "manaReduction",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "manaReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-10",
+    "tier": "D",
+    "name": "Huyền Lưu Quang",
+    "description": "Giảm hồi chiêu tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cooldownReduction",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "cooldownReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-11",
+    "tier": "D",
+    "name": "Huyền Diệu Thủ",
+    "description": "Sản lượng chế tạo tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "craft",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "craft",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-12",
+    "tier": "D",
+    "name": "Huyền Ngự Linh",
+    "description": "Công kích linh thú tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "pet",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "pet",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-13",
+    "tier": "D",
+    "name": "Huyền Trận Tâm",
+    "description": "Hiệu lực trận pháp tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "board",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "board",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-14",
+    "tier": "D",
+    "name": "Huyền Hồi Xuân",
+    "description": "Hiệu quả hồi phục tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "heal",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "heal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-15",
+    "tier": "D",
+    "name": "Huyền Địa Mạch",
+    "description": "Nguyên liệu thu thập tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "gather",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "gather",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-16",
+    "tier": "D",
+    "name": "Huyền Hộ Đạo",
+    "description": "Lá chắn tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "shield",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "shield",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-17",
+    "tier": "D",
+    "name": "Huyền Ngũ Hành",
+    "description": "Kháng nguyên tố tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "resistance",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "resistance",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-18",
+    "tier": "D",
+    "name": "Huyền Truy Phong",
+    "description": "Tốc độ đánh tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attackSpeed",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "attackSpeed",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-19",
+    "tier": "D",
+    "name": "Huyền Kính Tâm",
+    "description": "Phản sát thương tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "reflect",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "reflect",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-d-20",
+    "tier": "D",
+    "name": "Huyền Thương Đạo",
+    "description": "Thu nhập NPC tăng 7%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "trade",
+        "bps": 700
+      }
+    ],
+    "stackGroup": "trade",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-01",
+    "tier": "C",
+    "name": "Linh Kiếm Tâm",
+    "description": "Công kích tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-02",
+    "tier": "C",
+    "name": "Linh Thiết Cốt",
+    "description": "Sinh lực tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-03",
+    "tier": "C",
+    "name": "Linh Linh Hải",
+    "description": "Linh lực tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-04",
+    "tier": "C",
+    "name": "Linh Bất Động",
+    "description": "Giáp tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-05",
+    "tier": "C",
+    "name": "Linh Thiên Nhãn",
+    "description": "Chí mạng tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-06",
+    "tier": "C",
+    "name": "Linh Huyết Mạch",
+    "description": "Hút máu tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-07",
+    "tier": "C",
+    "name": "Linh Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-08",
+    "tier": "C",
+    "name": "Linh Tụ Linh",
+    "description": "Tu vi tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-09",
+    "tier": "C",
+    "name": "Linh Tiết Linh",
+    "description": "Giảm tiêu hao MP tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "manaReduction",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "manaReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-10",
+    "tier": "C",
+    "name": "Linh Lưu Quang",
+    "description": "Giảm hồi chiêu tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cooldownReduction",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "cooldownReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-11",
+    "tier": "C",
+    "name": "Linh Diệu Thủ",
+    "description": "Sản lượng chế tạo tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "craft",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "craft",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-12",
+    "tier": "C",
+    "name": "Linh Ngự Linh",
+    "description": "Công kích linh thú tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "pet",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "pet",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-13",
+    "tier": "C",
+    "name": "Linh Trận Tâm",
+    "description": "Hiệu lực trận pháp tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "board",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "board",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-14",
+    "tier": "C",
+    "name": "Linh Hồi Xuân",
+    "description": "Hiệu quả hồi phục tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "heal",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "heal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-15",
+    "tier": "C",
+    "name": "Linh Địa Mạch",
+    "description": "Nguyên liệu thu thập tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "gather",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "gather",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-16",
+    "tier": "C",
+    "name": "Linh Hộ Đạo",
+    "description": "Lá chắn tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "shield",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "shield",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-17",
+    "tier": "C",
+    "name": "Linh Ngũ Hành",
+    "description": "Kháng nguyên tố tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "resistance",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "resistance",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-c-18",
+    "tier": "C",
+    "name": "Linh Truy Phong",
+    "description": "Tốc độ đánh tăng 10%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attackSpeed",
+        "bps": 1000
+      }
+    ],
+    "stackGroup": "attackSpeed",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-01",
+    "tier": "B",
+    "name": "Địa Kiếm Tâm",
+    "description": "Công kích tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-02",
+    "tier": "B",
+    "name": "Địa Thiết Cốt",
+    "description": "Sinh lực tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-03",
+    "tier": "B",
+    "name": "Địa Linh Hải",
+    "description": "Linh lực tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-04",
+    "tier": "B",
+    "name": "Địa Bất Động",
+    "description": "Giáp tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-05",
+    "tier": "B",
+    "name": "Địa Thiên Nhãn",
+    "description": "Chí mạng tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-06",
+    "tier": "B",
+    "name": "Địa Huyết Mạch",
+    "description": "Hút máu tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-07",
+    "tier": "B",
+    "name": "Địa Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-08",
+    "tier": "B",
+    "name": "Địa Tụ Linh",
+    "description": "Tu vi tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-09",
+    "tier": "B",
+    "name": "Địa Tiết Linh",
+    "description": "Giảm tiêu hao MP tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "manaReduction",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "manaReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-10",
+    "tier": "B",
+    "name": "Địa Lưu Quang",
+    "description": "Giảm hồi chiêu tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cooldownReduction",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "cooldownReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-11",
+    "tier": "B",
+    "name": "Địa Diệu Thủ",
+    "description": "Sản lượng chế tạo tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "craft",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "craft",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-12",
+    "tier": "B",
+    "name": "Địa Ngự Linh",
+    "description": "Công kích linh thú tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "pet",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "pet",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-13",
+    "tier": "B",
+    "name": "Địa Trận Tâm",
+    "description": "Hiệu lực trận pháp tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "board",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "board",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-14",
+    "tier": "B",
+    "name": "Địa Hồi Xuân",
+    "description": "Hiệu quả hồi phục tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "heal",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "heal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-15",
+    "tier": "B",
+    "name": "Địa Địa Mạch",
+    "description": "Nguyên liệu thu thập tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "gather",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "gather",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-b-16",
+    "tier": "B",
+    "name": "Địa Hộ Đạo",
+    "description": "Lá chắn tăng 15%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "shield",
+        "bps": 1500
+      }
+    ],
+    "stackGroup": "shield",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-01",
+    "tier": "A",
+    "name": "Thiên Kiếm Tâm",
+    "description": "Công kích tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-02",
+    "tier": "A",
+    "name": "Thiên Thiết Cốt",
+    "description": "Sinh lực tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-03",
+    "tier": "A",
+    "name": "Thiên Linh Hải",
+    "description": "Linh lực tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-04",
+    "tier": "A",
+    "name": "Thiên Bất Động",
+    "description": "Giáp tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-05",
+    "tier": "A",
+    "name": "Thiên Thiên Nhãn",
+    "description": "Chí mạng tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-06",
+    "tier": "A",
+    "name": "Thiên Huyết Mạch",
+    "description": "Hút máu tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-07",
+    "tier": "A",
+    "name": "Thiên Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-08",
+    "tier": "A",
+    "name": "Thiên Tụ Linh",
+    "description": "Tu vi tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-09",
+    "tier": "A",
+    "name": "Thiên Tiết Linh",
+    "description": "Giảm tiêu hao MP tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "manaReduction",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "manaReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-10",
+    "tier": "A",
+    "name": "Thiên Lưu Quang",
+    "description": "Giảm hồi chiêu tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cooldownReduction",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "cooldownReduction",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-11",
+    "tier": "A",
+    "name": "Thiên Diệu Thủ",
+    "description": "Sản lượng chế tạo tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "craft",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "craft",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-a-12",
+    "tier": "A",
+    "name": "Thiên Ngự Linh",
+    "description": "Công kích linh thú tăng 22%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "pet",
+        "bps": 2200
+      }
+    ],
+    "stackGroup": "pet",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-01",
+    "tier": "S",
+    "name": "Thánh Kiếm Tâm",
+    "description": "Công kích tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-02",
+    "tier": "S",
+    "name": "Thánh Thiết Cốt",
+    "description": "Sinh lực tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-03",
+    "tier": "S",
+    "name": "Thánh Linh Hải",
+    "description": "Linh lực tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-04",
+    "tier": "S",
+    "name": "Thánh Bất Động",
+    "description": "Giáp tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-05",
+    "tier": "S",
+    "name": "Thánh Thiên Nhãn",
+    "description": "Chí mạng tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "crit",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "crit",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-06",
+    "tier": "S",
+    "name": "Thánh Huyết Mạch",
+    "description": "Hút máu tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "lifesteal",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "lifesteal",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-07",
+    "tier": "S",
+    "name": "Thánh Ngộ Đạo",
+    "description": "Kinh nghiệm tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "exp",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "exp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-s-08",
+    "tier": "S",
+    "name": "Thánh Tụ Linh",
+    "description": "Tu vi tăng 32%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "cultivation",
+        "bps": 3200
+      }
+    ],
+    "stackGroup": "cultivation",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-ss-01",
+    "tier": "SS",
+    "name": "Tiên Kiếm Tâm",
+    "description": "Công kích tăng 45%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 4500
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-ss-02",
+    "tier": "SS",
+    "name": "Tiên Thiết Cốt",
+    "description": "Sinh lực tăng 45%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 4500
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-ss-03",
+    "tier": "SS",
+    "name": "Tiên Linh Hải",
+    "description": "Linh lực tăng 45%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxMp",
+        "bps": 4500
+      }
+    ],
+    "stackGroup": "maxMp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-ss-04",
+    "tier": "SS",
+    "name": "Tiên Bất Động",
+    "description": "Giáp tăng 45%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "defense",
+        "bps": 4500
+      }
+    ],
+    "stackGroup": "defense",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-sss-01",
+    "tier": "SSS",
+    "name": "Nghịch Thiên Cải Mệnh",
+    "description": "Công kích tăng 60%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "attack",
+        "bps": 6000
+      },
+      {
+        "stat": "exp",
+        "bps": 6000
+      },
+      {
+        "stat": "cultivation",
+        "bps": 6000
+      }
+    ],
+    "stackGroup": "attack",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  },
+  {
+    "id": "talent-sss-02",
+    "tier": "SSS",
+    "name": "Hỗn Nguyên Đạo Chủng",
+    "description": "Sinh lực tăng 60%. Hiệu lực thường trực, không nhân đôi khi kết nối lại.",
+    "effects": [
+      {
+        "stat": "maxHp",
+        "bps": 6000
+      },
+      {
+        "stat": "maxMp",
+        "bps": 6000
+      },
+      {
+        "stat": "resistance",
+        "bps": 6000
+      }
+    ],
+    "stackGroup": "maxHp",
+    "trigger": "permanent",
+    "cooldown": 0,
+    "branch": "all"
+  }
+]

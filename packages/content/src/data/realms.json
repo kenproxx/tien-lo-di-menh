@@ -1,0 +1,102 @@
+[
+  {
+    "id": 0,
+    "name": "Phàm Nhân",
+    "minLevel": 1,
+    "cultivation": "0",
+    "material": "breakthrough-pill",
+    "materialCount": 1,
+    "challengeKills": 5,
+    "statBps": 10000
+  },
+  {
+    "id": 1,
+    "name": "Luyện Khí",
+    "minLevel": 10,
+    "cultivation": "1000",
+    "material": "breakthrough-pill",
+    "materialCount": 1,
+    "challengeKills": 7,
+    "statBps": 11500
+  },
+  {
+    "id": 2,
+    "name": "Trúc Cơ",
+    "minLevel": 30,
+    "cultivation": "9000",
+    "material": "breakthrough-pill",
+    "materialCount": 2,
+    "challengeKills": 9,
+    "statBps": 13000
+  },
+  {
+    "id": 3,
+    "name": "Kim Đan",
+    "minLevel": 60,
+    "cultivation": "36000",
+    "material": "breakthrough-pill",
+    "materialCount": 3,
+    "challengeKills": 11,
+    "statBps": 14500
+  },
+  {
+    "id": 4,
+    "name": "Nguyên Anh",
+    "minLevel": 100,
+    "cultivation": "100000",
+    "material": "breakthrough-pill",
+    "materialCount": 4,
+    "challengeKills": 13,
+    "statBps": 16000
+  },
+  {
+    "id": 5,
+    "name": "Hóa Thần",
+    "minLevel": 150,
+    "cultivation": "225000",
+    "material": "breakthrough-pill",
+    "materialCount": 5,
+    "challengeKills": 15,
+    "statBps": 17500
+  },
+  {
+    "id": 6,
+    "name": "Luyện Hư",
+    "minLevel": 220,
+    "cultivation": "484000",
+    "material": "breakthrough-pill",
+    "materialCount": 6,
+    "challengeKills": 17,
+    "statBps": 19000
+  },
+  {
+    "id": 7,
+    "name": "Hợp Đạo",
+    "minLevel": 300,
+    "cultivation": "900000",
+    "material": "breakthrough-pill",
+    "materialCount": 7,
+    "challengeKills": 19,
+    "statBps": 20500
+  },
+  {
+    "id": 8,
+    "name": "Đại Thừa",
+    "minLevel": 400,
+    "cultivation": "1600000",
+    "material": "breakthrough-pill",
+    "materialCount": 8,
+    "challengeKills": 21,
+    "statBps": 22000
+  },
+  {
+    "id": 9,
+    "name": "Độ Kiếp",
+    "minLevel": 500,
+    "cultivation": "2500000",
+    "material": "breakthrough-pill",
+    "materialCount": 9,
+    "challengeKills": 23,
+    "statBps": 23500
+  }
+]
