@@ -1,1 +1,5 @@
-{"name": "@tien-lo/server", "private": true, "type": "module"}
+{
+  "name": "@tien-lo/server",
+  "private": true,
+  "type": "module"
+}

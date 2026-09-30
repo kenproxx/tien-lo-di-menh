@@ -17,12 +17,5 @@
     "time": "ceil; positive minimum 1 tick"
   },
   "npcExchange": "not offered",
-  "qualityMultipliersBps": [
-    10000,
-    12000,
-    15000,
-    19000,
-    24000,
-    30000
-  ]
+  "qualityMultipliersBps": [10000, 12000, 15000, 19000, 24000, 30000]
 }

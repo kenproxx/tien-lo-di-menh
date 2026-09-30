@@ -1,5 +1,20 @@
 [
   {
+    "id": "gear-starter-1-weapon",
+    "name": "Mộc Kiếm Dẫn Lộ",
+    "branch": null,
+    "level": 1,
+    "realm": 0,
+    "slot": "weapon",
+    "attack": "5",
+    "defense": "0",
+    "maxHp": "10",
+    "element": "none",
+    "price": "20",
+    "npc": true,
+    "qualityCeiling": 0
+  },
+  {
     "id": "gear-sword-10-weapon",
     "name": "Thanh Phong Pháp Khí 10",
     "branch": "sword",

@@ -8,7 +8,7 @@
         "level": 1,
         "points": 100,
         "objective": "checkin",
-        "required": 5,
+        "required": 1,
         "rewardCoins": "500",
         "rewardItem": "spirit-stone"
       },
@@ -16,7 +16,7 @@
         "level": 2,
         "points": 200,
         "objective": "checkin",
-        "required": 10,
+        "required": 2,
         "rewardCoins": "1000",
         "rewardItem": "spirit-stone"
       },
@@ -24,7 +24,7 @@
         "level": 3,
         "points": 300,
         "objective": "checkin",
-        "required": 15,
+        "required": 3,
         "rewardCoins": "1500",
         "rewardItem": "spirit-stone"
       },
@@ -32,7 +32,7 @@
         "level": 4,
         "points": 400,
         "objective": "checkin",
-        "required": 20,
+        "required": 4,
         "rewardCoins": "2000",
         "rewardItem": "spirit-stone"
       },
@@ -40,7 +40,7 @@
         "level": 5,
         "points": 500,
         "objective": "checkin",
-        "required": 25,
+        "required": 5,
         "rewardCoins": "2500",
         "rewardItem": "spirit-stone"
       }
@@ -104,7 +104,7 @@
         "level": 1,
         "points": 100,
         "objective": "challenge",
-        "required": 5,
+        "required": 1,
         "rewardCoins": "500",
         "rewardItem": "spirit-stone"
       },
@@ -112,7 +112,7 @@
         "level": 2,
         "points": 200,
         "objective": "challenge",
-        "required": 10,
+        "required": 1,
         "rewardCoins": "1000",
         "rewardItem": "spirit-stone"
       },
@@ -120,7 +120,7 @@
         "level": 3,
         "points": 300,
         "objective": "challenge",
-        "required": 15,
+        "required": 1,
         "rewardCoins": "1500",
         "rewardItem": "spirit-stone"
       },
@@ -128,7 +128,7 @@
         "level": 4,
         "points": 400,
         "objective": "challenge",
-        "required": 20,
+        "required": 1,
         "rewardCoins": "2000",
         "rewardItem": "spirit-stone"
       },
@@ -136,7 +136,7 @@
         "level": 5,
         "points": 500,
         "objective": "challenge",
-        "required": 25,
+        "required": 1,
         "rewardCoins": "2500",
         "rewardItem": "spirit-stone"
       }
@@ -296,7 +296,7 @@
         "level": 1,
         "points": 100,
         "objective": "pet",
-        "required": 5,
+        "required": 1,
         "rewardCoins": "500",
         "rewardItem": "spirit-stone"
       },
@@ -304,7 +304,7 @@
         "level": 2,
         "points": 200,
         "objective": "pet",
-        "required": 10,
+        "required": 1,
         "rewardCoins": "1000",
         "rewardItem": "spirit-stone"
       },
@@ -312,7 +312,7 @@
         "level": 3,
         "points": 300,
         "objective": "pet",
-        "required": 15,
+        "required": 1,
         "rewardCoins": "1500",
         "rewardItem": "spirit-stone"
       },
@@ -320,7 +320,7 @@
         "level": 4,
         "points": 400,
         "objective": "pet",
-        "required": 20,
+        "required": 1,
         "rewardCoins": "2000",
         "rewardItem": "spirit-stone"
       },
@@ -328,7 +328,7 @@
         "level": 5,
         "points": 500,
         "objective": "pet",
-        "required": 25,
+        "required": 1,
         "rewardCoins": "2500",
         "rewardItem": "spirit-stone"
       }
@@ -344,7 +344,7 @@
         "level": 1,
         "points": 100,
         "objective": "hidden",
-        "required": 5,
+        "required": 1,
         "rewardCoins": "500",
         "rewardItem": "spirit-stone"
       },
@@ -352,7 +352,7 @@
         "level": 2,
         "points": 200,
         "objective": "hidden",
-        "required": 10,
+        "required": 2,
         "rewardCoins": "1000",
         "rewardItem": "spirit-stone"
       },
@@ -360,7 +360,7 @@
         "level": 3,
         "points": 300,
         "objective": "hidden",
-        "required": 15,
+        "required": 3,
         "rewardCoins": "1500",
         "rewardItem": "spirit-stone"
       },
@@ -368,7 +368,7 @@
         "level": 4,
         "points": 400,
         "objective": "hidden",
-        "required": 20,
+        "required": 4,
         "rewardCoins": "2000",
         "rewardItem": "spirit-stone"
       },
@@ -376,7 +376,7 @@
         "level": 5,
         "points": 500,
         "objective": "hidden",
-        "required": 25,
+        "required": 5,
         "rewardCoins": "2500",
         "rewardItem": "spirit-stone"
       }

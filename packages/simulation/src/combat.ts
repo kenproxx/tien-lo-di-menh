@@ -1,12 +1,123 @@
-import {clampU64,capReduction} from './uint64.js';
-export type Element='physical'|'none'|'metal'|'wood'|'water'|'fire'|'earth'|'wind'|'lightning'|'ice'|'light'|'dark';
-const cycle:Partial<Record<Element,Element>>={metal:'wood',wood:'earth',earth:'water',water:'fire',fire:'metal',light:'dark',dark:'light'};
-export function relation(attack:Element,body:Element):number{return cycle[attack]===body?12000:cycle[body]===attack?8000:10000;}
-export interface HitContext{raw:bigint;level:number;defense:bigint;hp:bigint;shield:bigint;attackElement:Element;bodyElement:Element;crit:boolean;critMultiplierBps?:number;armorBreak?:bigint;penetrationBps?:number;penetrationFlat?:bigint;reductionBps?:number;lifestealBps?:number;reflectBps?:number;immune?:boolean;secondary?:boolean;}
-export function resolveHit(c:HitContext){const effectiveDefense=clampU64((clampU64(c.defense-(c.armorBreak??0n))*BigInt(10000-capReduction(c.penetrationBps??0)))/10000n-(c.penetrationFlat??0n));const armor=effectiveDefense*10000n/(effectiveDefense+BigInt(Math.max(1,c.level))*100n);const reduction=capReduction(Number(armor)+(c.reductionBps??0));let raw=c.raw;if(c.crit)raw=raw*BigInt(c.critMultiplierBps??15000)/10000n;raw=raw*BigInt(relation(c.attackElement,c.bodyElement))/10000n;let damage=clampU64(raw*BigInt(10000-reduction)/10000n);if(c.raw>0n&&damage===0n)damage=1n;if(c.immune)damage=0n;const shieldDamage=damage<c.shield?damage:c.shield;const hpDamage=damage-shieldDamage<c.hp?damage-shieldDamage:c.hp;return{damage,shieldDamage,hpDamage,effectiveDefense,lifesteal:c.secondary?0n:clampU64(hpDamage*BigInt(c.lifestealBps??0)/10000n),reflection:c.secondary?0n:clampU64(hpDamage*BigInt(c.reflectBps??0)/10000n)};}
-export interface Shield{source:string;caster:string;amount:bigint;expires:number;}
-export function applyShield(layers:Shield[],layer:Shield){return [...layers.filter(s=>s.source!==layer.source||s.caster!==layer.caster),layer].sort((a,b)=>a.expires-b.expires);}
-export function consumeShields(layers:Shield[],damage:bigint,tick:number){let remaining=damage;const result:Shield[]=[];for(const layer of layers.filter(s=>s.expires>tick).sort((a,b)=>a.expires-b.expires)){const amount=layer.amount>remaining?layer.amount-remaining:0n;remaining=remaining>layer.amount?remaining-layer.amount:0n;if(amount>0n)result.push({...layer,amount});}return{layers:result,remaining};}
-export type StatusKind='slow'|'root'|'stun'|'freeze'|'silence'|'poison'|'burn';
-export interface Status{kind:StatusKind;expires:number;}
-export function applyStatus(statuses:Status[],status:Status,boss:boolean){if(boss&&['root','stun','freeze'].includes(status.kind))return statuses;const old=statuses.find(s=>s.kind===status.kind);return [...statuses.filter(s=>s.kind!==status.kind),{...status,expires:Math.max(old?.expires??0,status.expires)}];}
+import { clampU64, capReduction } from "./uint64.js";
+export type Element =
+  | "physical"
+  | "none"
+  | "metal"
+  | "wood"
+  | "water"
+  | "fire"
+  | "earth"
+  | "wind"
+  | "lightning"
+  | "ice"
+  | "light"
+  | "dark";
+const cycle: Partial<Record<Element, Element>> = {
+  metal: "wood",
+  wood: "earth",
+  earth: "water",
+  water: "fire",
+  fire: "metal",
+  light: "dark",
+  dark: "light",
+};
+export function relation(attack: Element, body: Element): number {
+  return cycle[attack] === body ? 12000 : cycle[body] === attack ? 8000 : 10000;
+}
+export interface HitContext {
+  raw: bigint;
+  level: number;
+  defense: bigint;
+  hp: bigint;
+  shield: bigint;
+  attackElement: Element;
+  bodyElement: Element;
+  crit: boolean;
+  critMultiplierBps?: number;
+  armorBreak?: bigint;
+  penetrationBps?: number;
+  penetrationFlat?: bigint;
+  reductionBps?: number;
+  lifestealBps?: number;
+  reflectBps?: number;
+  immune?: boolean;
+  secondary?: boolean;
+}
+export function resolveHit(c: HitContext) {
+  const effectiveDefense = clampU64(
+    (clampU64(c.defense - (c.armorBreak ?? 0n)) *
+      BigInt(10000 - capReduction(c.penetrationBps ?? 0))) /
+      10000n -
+      (c.penetrationFlat ?? 0n),
+  );
+  const armor =
+    (effectiveDefense * 10000n) /
+    (effectiveDefense + BigInt(Math.max(1, c.level)) * 100n);
+  const reduction = capReduction(Number(armor) + (c.reductionBps ?? 0));
+  let raw = c.raw;
+  if (c.crit) raw = (raw * BigInt(c.critMultiplierBps ?? 15000)) / 10000n;
+  raw = (raw * BigInt(relation(c.attackElement, c.bodyElement))) / 10000n;
+  let damage = clampU64((raw * BigInt(10000 - reduction)) / 10000n);
+  if (c.raw > 0n && damage === 0n) damage = 1n;
+  if (c.immune) damage = 0n;
+  const shieldDamage = damage < c.shield ? damage : c.shield;
+  const hpDamage = damage - shieldDamage < c.hp ? damage - shieldDamage : c.hp;
+  return {
+    damage,
+    shieldDamage,
+    hpDamage,
+    effectiveDefense,
+    lifesteal: c.secondary
+      ? 0n
+      : clampU64((hpDamage * BigInt(c.lifestealBps ?? 0)) / 10000n),
+    reflection: c.secondary
+      ? 0n
+      : clampU64((hpDamage * BigInt(c.reflectBps ?? 0)) / 10000n),
+  };
+}
+export interface Shield {
+  source: string;
+  caster: string;
+  amount: bigint;
+  expires: number;
+}
+export function applyShield(layers: Shield[], layer: Shield) {
+  return [
+    ...layers.filter(
+      (s) => s.source !== layer.source || s.caster !== layer.caster,
+    ),
+    layer,
+  ].sort((a, b) => a.expires - b.expires);
+}
+export function consumeShields(layers: Shield[], damage: bigint, tick: number) {
+  let remaining = damage;
+  const result: Shield[] = [];
+  for (const layer of layers
+    .filter((s) => s.expires > tick)
+    .sort((a, b) => a.expires - b.expires)) {
+    const amount = layer.amount > remaining ? layer.amount - remaining : 0n;
+    remaining = remaining > layer.amount ? remaining - layer.amount : 0n;
+    if (amount > 0n) result.push({ ...layer, amount });
+  }
+  return { layers: result, remaining };
+}
+export type StatusKind =
+  | "slow"
+  | "root"
+  | "stun"
+  | "freeze"
+  | "silence"
+  | "poison"
+  | "burn";
+export interface Status {
+  kind: StatusKind;
+  expires: number;
+}
+export function applyStatus(statuses: Status[], status: Status, boss: boolean) {
+  if (boss && ["root", "stun", "freeze"].includes(status.kind)) return statuses;
+  const old = statuses.find((s) => s.kind === status.kind);
+  return [
+    ...statuses.filter((s) => s.kind !== status.kind),
+    { ...status, expires: Math.max(old?.expires ?? 0, status.expires) },
+  ];
+}

@@ -17,22 +17,25 @@
     "db:migrate": "tsx packages/database/src/migrate.ts",
     "db:seed": "tsx scripts/seed.ts",
     "load:smoke": "tsx tests/load/smoke.ts",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "admin": "tsx scripts/admin.ts",
+    "format:check": "prettier --check \"apps/*/src/**/*.{ts,css}\" \"packages/*/src/**/*.{ts,json}\" scripts tests tsconfig.json vitest.config.ts playwright.config.ts"
   },
   "dependencies": {
-    "ws": "8.22.0",
-    "zod": "4.6.5",
-    "pg": "8.16.3",
+    "better-auth": "1.7.6",
     "drizzle-orm": "0.45.3",
-    "better-auth": "1.7.6"
+    "pg": "8.16.3",
+    "ws": "8.22.0",
+    "zod": "4.6.5"
   },
   "devDependencies": {
-    "typescript": "5.9.3",
-    "tsx": "4.20.6",
-    "vitest": "5.0.3",
+    "@playwright/test": "1.63.0",
     "@types/node": "24.10.0",
-    "@types/ws": "8.18.1",
     "@types/pg": "8.15.5",
-    "@playwright/test": "1.63.0"
+    "@types/ws": "8.18.1",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vitest": "5.0.3"
   }
 }

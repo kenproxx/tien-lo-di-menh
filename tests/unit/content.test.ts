@@ -1,5 +1,33 @@
-import {it,expect} from 'vitest';
-import {catalog,validateCatalog,levelExp,talentTier,rollAwakening,availableSkills} from '../../packages/content/src/index.js';
-it('materializes complete catalog counts and resolves every talent effect',()=>{expect(catalog.talents).toHaveLength(120);expect(catalog.skills).toHaveLength(24);expect(catalog.hiddenQuests).toHaveLength(32);expect(catalog.systems).toHaveLength(8);expect(catalog.pets).toHaveLength(6);expect(catalog.boards).toHaveLength(6);expect(catalog.recipes.filter(r=>r.kind==='alchemy')).toHaveLength(15);expect(validateCatalog()).toEqual([]);expect(catalog.talents.filter(t=>t.tier==='SSS')).toHaveLength(2);});
-it('does not cap progression at 18 or 500, and respects tier boundaries',()=>{expect(levelExp(501)>levelExp(500)).toBe(true);expect(talentTier(0)).toBe('F');expect(talentTier(2200)).toBe('E');expect(talentTier(9970)).toBe('SSS');expect(availableSkills('sword',100)).toHaveLength(8);});
-it('offers 3 distinct systems only in 3% cases',()=>{const result=rollAwakening(()=>0);expect(result.systemOffers).toHaveLength(3);expect(new Set(result.systemOffers).size).toBe(3);expect(rollAwakening(()=>0.5).systemOffers).toEqual([]);});
+import { it, expect } from "vitest";
+import {
+  catalog,
+  validateCatalog,
+  levelExp,
+  talentTier,
+  rollAwakening,
+  availableSkills,
+} from "../../packages/content/src/index.js";
+it("materializes complete catalog counts and resolves every talent effect", () => {
+  expect(catalog.talents).toHaveLength(120);
+  expect(catalog.skills).toHaveLength(24);
+  expect(catalog.hiddenQuests).toHaveLength(32);
+  expect(catalog.systems).toHaveLength(8);
+  expect(catalog.pets).toHaveLength(6);
+  expect(catalog.boards).toHaveLength(6);
+  expect(catalog.recipes.filter((r) => r.kind === "alchemy")).toHaveLength(15);
+  expect(validateCatalog()).toEqual([]);
+  expect(catalog.talents.filter((t) => t.tier === "SSS")).toHaveLength(2);
+});
+it("does not cap progression at 18 or 500, and respects tier boundaries", () => {
+  expect(levelExp(501) > levelExp(500)).toBe(true);
+  expect(talentTier(0)).toBe("F");
+  expect(talentTier(2200)).toBe("E");
+  expect(talentTier(9970)).toBe("SSS");
+  expect(availableSkills("sword", 100)).toHaveLength(8);
+});
+it("offers 3 distinct systems only in 3% cases", () => {
+  const result = rollAwakening(() => 0);
+  expect(result.systemOffers).toHaveLength(3);
+  expect(new Set(result.systemOffers).size).toBe(3);
+  expect(rollAwakening(() => 0.5).systemOffers).toEqual([]);
+});

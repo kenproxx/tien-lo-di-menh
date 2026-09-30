@@ -23,6 +23,8 @@ services:
       BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?set a random 32+ character auth secret}
       BETTER_AUTH_URL: ${BETTER_AUTH_URL:?set public HTTPS auth URL}
       WEB_ORIGIN: ${WEB_ORIGIN:?set exact web origin}
+      WORLD_PROXY_TOKEN: ${WORLD_PROXY_TOKEN:?set shared world/web proxy token}
+      TRUSTED_PROXY_IPS: 10.203.0.4
       GAME_PORT: 3001
     expose: [3001]
     depends_on:
@@ -51,6 +53,14 @@ services:
       - caddy-config:/config
     depends_on: [world]
     restart: unless-stopped
+    networks:
+      default:
+        ipv4_address: 10.203.0.4
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 10.203.0.0/24
 volumes:
   postgres-data:
   caddy-data:

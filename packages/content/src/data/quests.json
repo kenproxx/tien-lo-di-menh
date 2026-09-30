@@ -145,11 +145,11 @@
   },
   {
     "id": "hidden-0",
-    "name": "Dấu chân dưới gốc trúc 1",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Dấu chân dưới gốc trúc",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Có người đếm vết chân, nhưng chỉ vết chân quay về mới giữ lời hứa.",
     "map": "map-0",
-    "required": 3,
+    "required": 1,
     "minLevel": 1,
     "exp": "350",
     "coins": "100",
@@ -159,15 +159,22 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 200
+    "location": 200,
+    "condition": "dialog",
+    "options": [
+      "Giữ lời hứa với người đã khuất",
+      "Tìm sức mạnh cho riêng mình",
+      "Mang ánh sáng về cho người khác"
+    ],
+    "answer": 0
   },
   {
     "id": "hidden-1",
-    "name": "Lời hẹn bên bến nước 2",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Lời hẹn bên bến nước",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Bến nước nhớ tiếng mái chèo; hãy chọn điều còn ở lại sau khi khách đi.",
     "map": "map-1",
-    "required": 4,
+    "required": 1,
     "minLevel": 1,
     "exp": "450",
     "coins": "120",
@@ -177,15 +184,22 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 500
+    "location": 500,
+    "condition": "dialog",
+    "options": [
+      "Giữ lời hứa với người đã khuất",
+      "Tìm sức mạnh cho riêng mình",
+      "Mang ánh sáng về cho người khác"
+    ],
+    "answer": 1
   },
   {
     "id": "hidden-2",
-    "name": "Mảnh ngọc thất lạc 3",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Mảnh ngọc trong giếng cũ",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Ngọc không phát sáng trong tay kẻ tham. Người giữ giếng hỏi bạn muốn gì.",
     "map": "map-2",
-    "required": 5,
+    "required": 1,
     "minLevel": 1,
     "exp": "550",
     "coins": "140",
@@ -195,15 +209,22 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 800
+    "location": 800,
+    "condition": "dialog",
+    "options": [
+      "Giữ lời hứa với người đã khuất",
+      "Tìm sức mạnh cho riêng mình",
+      "Mang ánh sáng về cho người khác"
+    ],
+    "answer": 2
   },
   {
     "id": "hidden-3",
-    "name": "Đèn trời Thanh Khê 4",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Đèn trời Thanh Khê",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Đèn trời chỉ bay khi lời cầu không dành riêng cho mình.",
     "map": "map-3",
-    "required": 6,
+    "required": 1,
     "minLevel": 1,
     "exp": "650",
     "coins": "160",
@@ -213,15 +234,22 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 1100
+    "location": 1100,
+    "condition": "dialog",
+    "options": [
+      "Giữ lời hứa với người đã khuất",
+      "Tìm sức mạnh cho riêng mình",
+      "Mang ánh sáng về cho người khác"
+    ],
+    "answer": 0
   },
   {
     "id": "hidden-4",
-    "name": "Dấu chân dưới gốc trúc 5",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Dược thảo của bà Từ",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Bà Từ cần linh thảo để cứu người, không cần lời ca tụng.",
     "map": "map-0",
-    "required": 7,
+    "required": 1,
     "minLevel": 1,
     "exp": "750",
     "coins": "180",
@@ -231,15 +259,18 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 1400
+    "location": 1400,
+    "condition": "item",
+    "item": "herb",
+    "itemCount": 9
   },
   {
     "id": "hidden-5",
-    "name": "Lời hẹn bên bến nước 6",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Túi hạt của lão nông",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Lão nông đã mất túi hạt; mùi linh thảo có thể dẫn ông về.",
     "map": "map-1",
-    "required": 3,
+    "required": 1,
     "minLevel": 1,
     "exp": "850",
     "coins": "200",
@@ -249,15 +280,18 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 1700
+    "location": 1700,
+    "condition": "item",
+    "item": "herb",
+    "itemCount": 10
   },
   {
     "id": "hidden-6",
-    "name": "Mảnh ngọc thất lạc 7",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Hương trầm Trúc Phong",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Hương trầm giữa rừng trúc thiếu một vị thuốc cuối cùng.",
     "map": "map-2",
-    "required": 4,
+    "required": 1,
     "minLevel": 1,
     "exp": "950",
     "coins": "220",
@@ -267,15 +301,18 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 200
+    "location": 200,
+    "condition": "item",
+    "item": "herb",
+    "itemCount": 11
   },
   {
     "id": "hidden-7",
-    "name": "Đèn trời Thanh Khê 8",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Món nợ người lữ khách",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Lữ khách muốn một món quà nhỏ để kết thúc chuyến đi.",
     "map": "map-3",
-    "required": 5,
+    "required": 1,
     "minLevel": 1,
     "exp": "1050",
     "coins": "240",
@@ -285,13 +322,16 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 500
+    "location": 500,
+    "condition": "item",
+    "item": "herb",
+    "itemCount": 12
   },
   {
     "id": "hidden-8",
-    "name": "Dấu chân dưới gốc trúc 9",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Tiếng sói dưới trăng",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Đi theo tiếng sói, bảo vệ con đường dưới trăng.",
     "map": "map-0",
     "required": 6,
     "minLevel": 1,
@@ -303,13 +343,14 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 800
+    "location": 800,
+    "condition": "combat"
   },
   {
     "id": "hidden-9",
-    "name": "Lời hẹn bên bến nước 10",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Đá vọng âm Lang Nha",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Hòn đá chỉ vọng âm khi rừng không còn tiếng yêu thú.",
     "map": "map-1",
     "required": 7,
     "minLevel": 1,
@@ -321,13 +362,14 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 1100
+    "location": 1100,
+    "condition": "combat"
   },
   {
     "id": "hidden-10",
-    "name": "Mảnh ngọc thất lạc 11",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Bóng đen trên cổ đạo",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Có một bóng đen bám theo thương đội; đừng dùng máy móc thay quyết tâm.",
     "map": "map-2",
     "required": 3,
     "minLevel": 1,
@@ -339,13 +381,14 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 1400
+    "location": 1400,
+    "condition": "combat"
   },
   {
     "id": "hidden-11",
-    "name": "Đèn trời Thanh Khê 12",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Lời thề Thiên Mệnh",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Hãy dùng đôi tay mình giữ lời thề trước Thiên Mệnh Đài.",
     "map": "map-3",
     "required": 4,
     "minLevel": 1,
@@ -357,13 +400,14 @@
     "branch": null,
     "system": null,
     "talentStat": null,
-    "location": 1700
+    "location": 1700,
+    "condition": "combat"
   },
   {
     "id": "hidden-12",
-    "name": "Dấu chân dưới gốc trúc 13",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Kiếm ý trong lá trúc",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-0",
     "required": 5,
     "minLevel": 1,
@@ -375,13 +419,14 @@
     "branch": "sword",
     "system": null,
     "talentStat": null,
-    "location": 200
+    "location": 200,
+    "condition": "combat"
   },
   {
     "id": "hidden-13",
-    "name": "Lời hẹn bên bến nước 14",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Một nhát không quay đầu",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-1",
     "required": 6,
     "minLevel": 1,
@@ -393,13 +438,14 @@
     "branch": "sword",
     "system": null,
     "talentStat": null,
-    "location": 500
+    "location": 500,
+    "condition": "combat"
   },
   {
     "id": "hidden-14",
-    "name": "Mảnh ngọc thất lạc 15",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Hỏa tâm giữa sương lạnh",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-2",
     "required": 7,
     "minLevel": 1,
@@ -411,13 +457,14 @@
     "branch": "mage",
     "system": null,
     "talentStat": null,
-    "location": 800
+    "location": 800,
+    "condition": "combat"
   },
   {
     "id": "hidden-15",
-    "name": "Đèn trời Thanh Khê 16",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Linh âm bên thác đổ",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-3",
     "required": 3,
     "minLevel": 1,
@@ -429,13 +476,14 @@
     "branch": "mage",
     "system": null,
     "talentStat": null,
-    "location": 1100
+    "location": 1100,
+    "condition": "combat"
   },
   {
     "id": "hidden-16",
-    "name": "Dấu chân dưới gốc trúc 17",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Thiết cốt giữ cửa làng",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-0",
     "required": 4,
     "minLevel": 1,
@@ -447,13 +495,14 @@
     "branch": "body",
     "system": null,
     "talentStat": null,
-    "location": 1400
+    "location": 1400,
+    "condition": "combat"
   },
   {
     "id": "hidden-17",
-    "name": "Lời hẹn bên bến nước 18",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Đứng vững trước cuồng phong",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-1",
     "required": 5,
     "minLevel": 1,
@@ -465,13 +514,14 @@
     "branch": "body",
     "system": null,
     "talentStat": null,
-    "location": 1700
+    "location": 1700,
+    "condition": "combat"
   },
   {
     "id": "hidden-18",
-    "name": "Mảnh ngọc thất lạc 19",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Dấu ấn sát phạt",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-2",
     "required": 6,
     "minLevel": 18,
@@ -483,13 +533,15 @@
     "branch": null,
     "system": null,
     "talentStat": "attack",
-    "location": 200
+    "location": 200,
+    "condition": "combat",
+    "talentStats": ["attack", "crit", "lifesteal", "attackSpeed"]
   },
   {
     "id": "hidden-19",
-    "name": "Đèn trời Thanh Khê 20",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Người giữ ngọn đèn",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-3",
     "required": 7,
     "minLevel": 18,
@@ -501,13 +553,15 @@
     "branch": null,
     "system": null,
     "talentStat": "maxHp",
-    "location": 500
+    "location": 500,
+    "condition": "combat",
+    "talentStats": ["maxHp", "defense", "shield", "reflect", "resistance"]
   },
   {
     "id": "hidden-20",
-    "name": "Dấu chân dưới gốc trúc 21",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Lời thì thầm linh hải",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-0",
     "required": 3,
     "minLevel": 18,
@@ -519,13 +573,15 @@
     "branch": null,
     "system": null,
     "talentStat": "maxMp",
-    "location": 800
+    "location": 800,
+    "condition": "combat",
+    "talentStats": ["maxMp", "manaReduction", "cooldownReduction"]
   },
   {
     "id": "hidden-21",
-    "name": "Lời hẹn bên bến nước 22",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Kẻ đọc đường thiên cơ",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-1",
     "required": 4,
     "minLevel": 18,
@@ -537,13 +593,15 @@
     "branch": null,
     "system": null,
     "talentStat": "defense",
-    "location": 1100
+    "location": 1100,
+    "condition": "combat",
+    "talentStats": ["exp", "cultivation"]
   },
   {
     "id": "hidden-22",
-    "name": "Mảnh ngọc thất lạc 23",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Bàn tay nhuộm hương thảo",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-2",
     "required": 5,
     "minLevel": 18,
@@ -555,13 +613,15 @@
     "branch": null,
     "system": null,
     "talentStat": "crit",
-    "location": 1400
+    "location": 1400,
+    "condition": "combat",
+    "talentStats": ["craft", "gather", "trade"]
   },
   {
     "id": "hidden-23",
-    "name": "Đèn trời Thanh Khê 24",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Khế ước giữa linh hồn",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-3",
     "required": 6,
     "minLevel": 18,
@@ -573,13 +633,15 @@
     "branch": null,
     "system": null,
     "talentStat": "lifesteal",
-    "location": 1700
+    "location": 1700,
+    "condition": "combat",
+    "talentStats": ["pet", "board", "heal"]
   },
   {
     "id": "hidden-24",
-    "name": "Dấu chân dưới gốc trúc 25",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Ngày thứ hai của kẻ lạ",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-0",
     "required": 7,
     "minLevel": 18,
@@ -591,13 +653,14 @@
     "branch": null,
     "system": "system-0",
     "talentStat": null,
-    "location": 200
+    "location": 200,
+    "condition": "combat"
   },
   {
     "id": "hidden-25",
-    "name": "Lời hẹn bên bến nước 26",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Mối thù đã hóa thành ân",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-1",
     "required": 3,
     "minLevel": 18,
@@ -609,13 +672,14 @@
     "branch": null,
     "system": "system-1",
     "talentStat": null,
-    "location": 500
+    "location": 500,
+    "condition": "combat"
   },
   {
     "id": "hidden-26",
-    "name": "Mảnh ngọc thất lạc 27",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Một bước nghịch thiên",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-2",
     "required": 4,
     "minLevel": 18,
@@ -627,13 +691,14 @@
     "branch": null,
     "system": "system-2",
     "talentStat": null,
-    "location": 800
+    "location": 800,
+    "condition": "combat"
   },
   {
     "id": "hidden-27",
-    "name": "Đèn trời Thanh Khê 28",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Món hàng ngoài tam giới",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-3",
     "required": 5,
     "minLevel": 18,
@@ -645,13 +710,14 @@
     "branch": null,
     "system": "system-3",
     "talentStat": null,
-    "location": 1100
+    "location": 1100,
+    "condition": "combat"
   },
   {
     "id": "hidden-28",
-    "name": "Dấu chân dưới gốc trúc 29",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Đan tâm không vẩn đục",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-0",
     "required": 6,
     "minLevel": 18,
@@ -663,13 +729,14 @@
     "branch": null,
     "system": "system-4",
     "talentStat": null,
-    "location": 1400
+    "location": 1400,
+    "condition": "combat"
   },
   {
     "id": "hidden-29",
-    "name": "Lời hẹn bên bến nước 30",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Chiến ý chưa tắt",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-1",
     "required": 7,
     "minLevel": 18,
@@ -681,13 +748,14 @@
     "branch": null,
     "system": "system-5",
     "talentStat": null,
-    "location": 1700
+    "location": 1700,
+    "condition": "combat"
   },
   {
     "id": "hidden-30",
-    "name": "Mảnh ngọc thất lạc 31",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Người bạn của rừng sâu",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-2",
     "required": 3,
     "minLevel": 18,
@@ -699,13 +767,14 @@
     "branch": null,
     "system": "system-6",
     "talentStat": null,
-    "location": 200
+    "location": 200,
+    "condition": "combat"
   },
   {
     "id": "hidden-31",
-    "name": "Đèn trời Thanh Khê 32",
-    "description": "Tìm người giữ bí mật, đọc lời gợi ý rồi tự tay hoàn thành thử thách.",
-    "clue": "Khi bóng cây phủ đá xanh, người lữ khách vẫn chờ một câu trả lời.",
+    "name": "Bí mật sau tinh tượng",
+    "description": "Một câu chuyện dành riêng cho bạn. Thất bại có thể thử lại; phần thưởng chính chỉ nhận một lần.",
+    "clue": "Chỉ người hiểu con đường của mình mới nhận ra dấu hiệu bên phiến đá.",
     "map": "map-3",
     "required": 4,
     "minLevel": 18,
@@ -717,6 +786,7 @@
     "branch": null,
     "system": "system-7",
     "talentStat": null,
-    "location": 500
+    "location": 500,
+    "condition": "combat"
   }
 ]

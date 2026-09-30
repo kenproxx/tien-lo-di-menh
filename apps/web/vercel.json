@@ -1,1 +1,5 @@
-{"buildCommand":"cd ../.. && pnpm --filter @tien-lo/client build && pnpm exec tsx scripts/build-client.ts && pnpm --filter @tien-lo/web build","installCommand":"cd ../.. && pnpm install --frozen-lockfile","framework":"nextjs"}
+{
+  "buildCommand": "cd ../.. && pnpm --filter @tien-lo/client build && pnpm exec tsx scripts/build-client.ts && pnpm --filter @tien-lo/web build",
+  "installCommand": "cd ../.. && pnpm install --frozen-lockfile",
+  "framework": "nextjs"
+}
