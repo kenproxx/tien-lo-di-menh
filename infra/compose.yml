@@ -1,0 +1,57 @@
+services:
+  postgres:
+    image: public.ecr.aws/docker/library/postgres:17-alpine
+    environment:
+      POSTGRES_USER: tienlo
+      POSTGRES_DB: tienlo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set a database password}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U tienlo -d tienlo]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  world:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: ${DATABASE_URL:?set DATABASE_URL}
+      BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?set a random 32+ character auth secret}
+      BETTER_AUTH_URL: ${BETTER_AUTH_URL:?set public HTTPS auth URL}
+      WEB_ORIGIN: ${WEB_ORIGIN:?set exact web origin}
+      GAME_PORT: 3001
+    expose: [3001]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://localhost:3001/readyz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    init: true
+    stop_grace_period: 30s
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  caddy:
+    image: caddy:2-alpine
+    environment:
+      GAME_HOST: ${GAME_HOST:?set game hostname}
+    ports: ["80:80", "443:443"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on: [world]
+    restart: unless-stopped
+volumes:
+  postgres-data:
+  caddy-data:
+  caddy-config:

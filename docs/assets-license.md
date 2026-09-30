@@ -1,0 +1,2 @@
+# Asset manifest v1
+All rendered pixel shapes (hero, NPC, wolf, forest, pavilion, terrain) are original procedural graphics authored in apps/game-client/src/scene.ts for this repository. No Ninja School assets, copied sprites or external packs used. Game graphics can be reused by repository owner. Phaser dependency is MIT; see dependency distribution license. No external fonts. This manifest is documentation; a versioned checksum/CDN/Blob pipeline is still pending T25.

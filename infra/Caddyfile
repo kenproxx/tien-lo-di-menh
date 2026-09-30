@@ -1,0 +1,8 @@
+{$GAME_HOST} {
+  encode zstd gzip
+  reverse_proxy world:3001
+  header {
+    X-Content-Type-Options nosniff
+    Referrer-Policy strict-origin-when-cross-origin
+  }
+}
