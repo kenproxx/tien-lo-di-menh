@@ -71,3 +71,10 @@ Kết nối Vercel và VPS/DNS/PostgreSQL staging, triển khai theo runbook, ki
 - Đã tạo `tien-lo-postgres` qua Neon/Vercel Marketplace, store `store_r4PTt9aty7slUcOd`, vùng Singapore (`sin1`), billing plan `free_v3` (Free), auth tích hợp Neon tắt vì app dùng Better Auth. Đã nối vào Vercel project HTTP 201; API env xác nhận `DATABASE_URL` và các biến PG/Postgres là sensitive, chỉ production. Không ghi giá trị secret vào repo/log.
 - DB chưa chạy migrations hoặc kiểm kết nối từ game server; migrations tự chạy khi world khởi động. Vercel web hiện chưa có `GAME_SERVER_URL`, WSS endpoint hoặc shared proxy token, nên chưa đăng nhập/chơi realtime được.
 - `render.yaml` chuẩn bị Docker Web Service một instance, Singapore, cổng 10000, health `/readyz`, nhánh `work`; auth/proxy secret generate, DATABASE_URL nhập bảo mật. Gói Free chỉ để bắt đầu thử, có thể ngủ; chưa có cam kết chi phí cho gói luôn chạy và chưa tạo dịch vụ Render.
+
+### Render đã tạo sau khi kiểm tra endpoint dịch vụ
+
+- `/v1/services` xác thực thành công HTTP 200 dù `/v1/owners` vẫn bị Cloudflare 403. Dùng owner team của service hiện có, không sửa dịch vụ cũ. Đã tạo `tien-lo-world`, ID `srv-dav94cs9v7es73fl4360`, URL `https://tien-lo-world.onrender.com`, Docker Free Singapore, một instance, cổng 10000, `/readyz`, branch `work`, auto deploy tắt. Render tự khởi tạo deployment đầu tiên; đã thấy `build_in_progress`, chưa xác nhận healthy.
+- BETTER_AUTH_SECRET và WORLD_PROXY_TOKEN sinh ngẫu nhiên, truyền bảo mật qua API; không in hoặc ghi vào Git. WEB_ORIGIN/BETTER_AUTH_URL trỏ web production. Vercel env HTTP 201 đã đồng bộ GAME_SERVER_URL, VITE_WS_URL, VITE_API_URL trống và shared proxy token dạng sensitive.
+- Chưa có DATABASE_URL trên Render: API đọc Vercel storage secrets trả 403 `challenge_required`. Cần chủ tài khoản xác minh trong Vercel và nhập connection string vào Render Environment. Không vượt qua yêu cầu xác minh hoặc tự thay database khác.
+- Còn cần redeploy web để đưa VITE_WS_URL vào bundle, kiểm Render migrations/readiness và nghiệm thu auth/WSS/two-client combat. Endpoint web công khai vẫn bị policy môi trường chặn, không dùng build READY để tuyên bố game chơi được.

@@ -16,14 +16,14 @@ Tạo PostgreSQL staging qua Vercel Marketplace hoặc PostgreSQL VPS. Dùng DB 
 
 ## Render Blueprint + Vercel hiện tại
 
-Web đã deploy tại `https://tien-lo-di-menh.vercel.app`; Neon Free Singapore đã tạo và nối vào Vercel production. Game server chưa deploy vì Render API bị Cloudflare 403 từ môi trường agent. Không gọi đây là game đã vận hành end-to-end.
+Web đã deploy tại `https://tien-lo-di-menh.vercel.app`; Neon Free Singapore đã tạo và nối vào Vercel production. Docker Web Service `tien-lo-world` đã tạo trên Render tại `https://tien-lo-world.onrender.com`. API `/v1/owners` bị Cloudflare 403, nhưng `/v1/services` hoạt động; service mới dùng team owner của service hiện có. World còn thiếu `DATABASE_URL`; không gọi đây là game đã vận hành end-to-end.
 
-Trong Render dashboard, tạo Blueprint từ repo `kenproxx/tien-lo-di-menh`, chọn branch `work` và file root `render.yaml`. Điền `DATABASE_URL` của Neon từ trang quản lý database bảo mật. Blueprint dùng một Docker Web Service, auth/proxy secrets tự sinh, exact web origin đã điền, cổng 10000. Gói Free có thể ngủ; chọn gói luôn chạy khi có ngân sách được chấp thuận.
+Service hiện có: `https://dashboard.render.com/web/srv-dav94cs9v7es73fl4360`. Mở Environment, thêm `DATABASE_URL` của Neon lấy từ trang quản lý database bảo mật trên Vercel, rồi Save/redeploy. Vercel API đọc storage secrets trả `challenge_required`, nên connection string chưa được chuyển tự động. Service dùng một instance Docker, Singapore, cổng 10000, health `/readyz`, branch `work`, auth/proxy secrets đã sinh bảo mật. Gói Free có thể ngủ; chọn gói luôn chạy khi có ngân sách được chấp thuận. `render.yaml` chỉ là cấu hình để tái tạo, không cần import thêm service trùng.
 
-Sau khi `/readyz` Render thành công, cấu hình Vercel production `GAME_SERVER_URL=https://<service>.onrender.com`, `VITE_WS_URL=wss://<service>.onrender.com`, cùng `WORLD_PROXY_TOKEN` lấy bảo mật từ Render; giữ `VITE_API_URL` trống. Redeploy từ `work` với target production. Git link Vercel mặc định hiện là `main`, nên nếu dùng auto deploy cần đổi Production Branch sang `work` trong dashboard trước.
+Vercel production đã có `GAME_SERVER_URL=https://tien-lo-world.onrender.com`, `VITE_WS_URL=wss://tien-lo-world.onrender.com`, cùng `WORLD_PROXY_TOKEN` với Render; `VITE_API_URL` trống. Sau khi Render ready, kiểm các endpoint và signup. Redeploy Vercel từ `work` với target production nếu thay đổi biến build-time. Git link Vercel mặc định hiện là `main`, nên nếu dùng auto deploy cần đổi Production Branch sang `work` trong dashboard trước.
 
 Kiểm signup/login, nhân vật, WebSocket ticket, hai client cùng thấy combat và reconnect trên URL production. Bằng chứng build `READY` không thay cho các smoke checks này.
 
 ## Release gates chưa đạt
 
-Đọc docs/evidence/progress.md; catalog counts không chứng minh mọi feature đã hoàn thiện. Không tự hứa 500 CCU, không gọi mobile browser là APK/iOS verified. Người dùng đã giao quyền tự triển khai; quyền truy cập thực tế vẫn cần được cung cấp qua môi trường. Web Vercel và database Neon đã tạo, world Render và nghiệm thu end-to-end còn blocked.
+Đọc docs/evidence/progress.md; catalog counts không chứng minh mọi feature đã hoàn thiện. Không tự hứa 500 CCU, không gọi mobile browser là APK/iOS verified. Người dùng đã giao quyền tự triển khai; quyền truy cập thực tế vẫn cần được cung cấp qua môi trường. Web Vercel, database Neon và service Render đã tạo; world readiness và nghiệm thu end-to-end còn blocked vì chưa chuyển DATABASE_URL.
