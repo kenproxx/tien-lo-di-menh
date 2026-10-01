@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import { attackDirection, combatCue } from "./combat-animation.js";
 import { catalog } from "../../../packages/content/src/index.js";
 import {
   stepMovement,
@@ -254,6 +255,91 @@ export class WorldScene extends Phaser.Scene {
       .setOrigin(0.5);
     return this.add.container(x, y, [shadow, sprite, text]).setDepth(5);
   }
+  combatActor(id: string) {
+    return id === this.snapshot?.you.id
+      ? this.hero
+      : (this.actors.get(id) ?? this.mobs.get(id));
+  }
+  animateAttack(
+    attacker: Phaser.GameObjects.Container,
+    victim: Phaser.GameObjects.Container,
+    monster: boolean,
+  ) {
+    if (!attacker.active || !attacker.visible) return;
+    // Multiple targets can generate several hits for the same swing.
+    if (attacker.getData("attackingUntil") > this.time.now) return;
+    attacker.setData("attackingUntil", this.time.now + 240);
+    const sprite = attacker.list[1] as Phaser.GameObjects.Image;
+    const direction = attackDirection(attacker.x, victim.x, sprite.flipX);
+    sprite.setFlipX(direction < 0);
+    this.tweens.add({
+      targets: sprite,
+      x: direction * (monster ? 14 : 10),
+      y: monster ? -29 : -25,
+      angle: direction * (monster ? 14 : 24),
+      duration: 110,
+      yoyo: true,
+      ease: "Sine.easeOut",
+      onComplete: () => {
+        if (sprite.active) sprite.setPosition(0, -25).setAngle(0);
+      },
+    });
+    const swing = this.add.graphics();
+    swing.lineStyle(monster ? 3 : 4, monster ? 0xf29b78 : 0xffe5a0, 0.95);
+    if (monster) {
+      for (let i = -1; i <= 1; i++) {
+        swing.lineBetween(
+          direction * 10,
+          -42 + i * 7,
+          direction * 35,
+          -23 + i * 7,
+        );
+      }
+    } else {
+      swing.beginPath();
+      swing.arc(
+        direction * 6,
+        -27,
+        32,
+        direction > 0 ? -1.1 : 2.04,
+        direction > 0 ? 1.1 : 4.24,
+      );
+      swing.strokePath();
+      swing.lineStyle(2, 0xffffff, 0.8);
+      swing.lineBetween(direction * 9, -41, direction * 34, -16);
+    }
+    attacker.add(swing);
+    this.tweens.add({
+      targets: swing,
+      alpha: 0,
+      duration: 240,
+      onComplete: () => swing.destroy(),
+    });
+  }
+  animateHurt(victim: Phaser.GameObjects.Container) {
+    if (!victim.active || !victim.visible) return;
+    if (victim.getData("hurtUntil") > this.time.now) return;
+    victim.setData("hurtUntil", this.time.now + 180);
+    const sprite = victim.list[1] as Phaser.GameObjects.Image;
+    const tint = sprite.tintTopLeft;
+    sprite.setTintFill(0xffe7d3);
+    this.time.delayedCall(90, () => {
+      if (sprite.active) sprite.setTint(tint);
+    });
+    // Recoil uses scale so it can overlap attack offsets without moving the actor.
+    const scaleX = sprite.scaleX;
+    const scaleY = sprite.scaleY;
+    this.tweens.add({
+      targets: sprite,
+      scaleX: scaleX * 0.88,
+      scaleY: scaleY * 1.08,
+      duration: 80,
+      yoyo: true,
+      onComplete: () => {
+        if (sprite.active) sprite.setScale(scaleX, scaleY);
+      },
+    });
+  }
   apply(s: Snapshot) {
     this.seq = Math.max(this.seq, s.ack);
     this.snapshot = s;
@@ -343,6 +429,14 @@ export class WorldScene extends Phaser.Scene {
       this.seenEvents.add(e.id);
       if (this.seenEvents.size > 400)
         this.seenEvents.delete(this.seenEvents.values().next().value!);
+      const cue = combatCue(e);
+      if (cue) {
+        const attacker = this.combatActor(cue.attacker);
+        const victim = this.combatActor(cue.victim);
+        if (attacker && victim)
+          this.animateAttack(attacker, victim, cue.monsterAttack);
+        if (victim) this.animateHurt(victim);
+      }
       if (e.type === "hit" && e.x !== undefined) {
         const text = this.add
           .text(e.x, e.y ?? 350, e.value ?? "", {
@@ -394,6 +488,10 @@ export class WorldScene extends Phaser.Scene {
     }
     this.hero.setPosition(this.motion.x, this.motion.y);
     const sprite = this.hero.list[1] as Phaser.GameObjects.Image;
-    if (this.motion.vx !== 0) sprite.setFlipX(this.motion.vx < 0);
+    if (
+      this.motion.vx !== 0 &&
+      !(this.hero.getData("attackingUntil") > this.time.now)
+    )
+      sprite.setFlipX(this.motion.vx < 0);
   }
 }

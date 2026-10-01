@@ -39,4 +39,25 @@ Thiết kế/kế hoạch trong `docs/superpowers` đã được người dùng 
 
 ## Tiếp tục khi có môi trường triển khai
 
+## Hoạt họa combat — 2026-10-01
+
+### Kiểm chứng sau khi cài dependencies
+
+- `XDG_DATA_HOME=/workspace/.local/share XDG_CACHE_HOME=/workspace/.cache pnpm install --frozen-lockfile`: pass, lockfile giữ nguyên. Registry Docker PostgreSQL trả Forbidden; dùng binary PostgreSQL 18.4 từ gói npm `embedded-postgres` trong `/tmp`, DB local riêng tại `127.0.0.1:5432/tienlo`, migrate pass. Đây là kiểm chứng PostgreSQL 18.4 local, không phải staging/production hoặc PostgreSQL 17.
+- `pnpm test`: 70/70, 25 files pass. Lần đầu thiếu `.env` khiến 7 suites lỗi `DATABASE_URL_REQUIRED`; sau khi cấu hình DB local bằng `.env.example`, toàn bộ suite pass.
+- `node --test tests/scripts/*.test.mjs`: 8/8 pass. `pnpm typecheck`, `pnpm format:check`, `pnpm content:validate`, `pnpm --filter @tien-lo/client build`, `git diff --check`: pass.
+- `pnpm dev`: server port 3001 và Vite port 5173 khởi động thành công. `pnpm exec playwright test --config playwright.local.config.ts`: 6/6 pass với Chromium hệ thống `/usr/bin/chromium`; config tạm chỉ chọn executable, đã xóa sau test. CDN Playwright tải browser trả 403; không thay đổi cấu hình browser của repository.
+- Smoke bổ sung bằng Playwright + Phaser thật: hero vung sang phải, quái chồm sang trái; vệt chém/cào xuất hiện rồi được destroy; sprite trả về offset/angle ban đầu, boss scale/tint khôi phục, container world position giữ nguyên; không có pageerror. Script smoke lần đầu bị treo do import Phaser với URL khác cache query của Vite, đã sửa harness để dùng đúng URL import của scene và chạy pass. Không có thay đổi sản phẩm từ vấn đề harness này.
+- Screenshots sinh lại bởi suite E2E được khôi phục về bản đã lưu; không đẩy các thay đổi ảnh ngoài phạm vi. Chưa chạy trên Windows thật; chưa có nghiệm thu native mobile.
+
+- Người dùng chấp thuận thiết kế trong chat. Nhân vật nghiêng/vung kiếm với vệt chém, quái chồm với vệt cào; nạn nhân chớp màu và co giãn phản lực. Dựa vào `hit`/`hurt` từ server, dùng cùng đường xử lý cho tự chiến và người chơi khác. Giữ nguyên vị trí container; giữ scale/tint boss; gộp hoạt họa nhiều hit trong 240ms. Scene vẫn lọc event ID trùng như trước.
+- `node --test tests/scripts/*.test.mjs`: 8/8 pass, gồm 6 kiểm thử combat và 2 launcher. Combat kiểm tra hướng, semantics actor/target (hurt đảo vai), loại event không liên quan, gộp multi-target, giữ vị trí và khôi phục scale/tint với Phaser stub. Chưa nghiệm thu hình ảnh trong trình duyệt.
+- `pnpm --config.verify-deps-before-run=false test`: blocked `vitest: not found`; `pnpm --config.verify-deps-before-run=false typecheck`: blocked `tsc: not found`. Checkout chưa có node_modules. `git diff --check`: pass.
+
+## Sửa launcher dev trên Windows — 2026-10-01
+
+- `scripts/dev.ts` gọi `process.execPath` với CLI JavaScript được resolve từ package `tsx` ở root và `vite` ở workspace client, thay cho spawn trực tiếp `.bin` shims. Bắt child-process `error`, đặt exit code 1 và dừng các tiến trình còn lại.
+- `node --test tests/scripts/dev.test.mjs`: trước sửa 2 fail (launcher `.bin`, lỗi spawn không được xử lý); sau sửa 2 pass. Test dùng spawn giả để kiểm tra lời gọi launcher và xử lý lỗi, không thay thế smoke test trên Windows.
+- `git diff --check`: pass. `pnpm test`: blocked trước khi chạy Vitest; checkout không có `node_modules`, pnpm tự cài dependencies và lỗi ENOENT khi tạo `/home/agent/.local/share/pnpm`. Chưa kiểm chứng typecheck, full suite hoặc khởi động server/client thực tế trên Windows.
+
 Kết nối Vercel và VPS/DNS/PostgreSQL staging, triển khai theo runbook, kiểm cookie/WSS/proxy trust và restore ở staging. Hoàn thiện parity offline, policy full-claim loot, chaos tests và nội dung bằng playtest. Chạy tải theo đúng T26 trước khi thay giới hạn admission mặc định 100. Build/cài native với HTTPS/WSS và xác minh auth/lifecycle trên thiết bị trước khi phát hành.
