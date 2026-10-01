@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: tien-lo-world
+    runtime: docker
+    repo: https://github.com/kenproxx/tien-lo-di-menh
+    branch: work
+    region: singapore
+    plan: free
+    numInstances: 1
+    dockerfilePath: ./infra/Dockerfile
+    dockerContext: .
+    healthCheckPath: /readyz
+    autoDeployTrigger: off
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GAME_PORT
+        value: "10000"
+      - key: DATABASE_URL
+        sync: false
+      - key: BETTER_AUTH_SECRET
+        generateValue: true
+      - key: WORLD_PROXY_TOKEN
+        generateValue: true
+      - key: BETTER_AUTH_URL
+        value: https://tien-lo-di-menh.vercel.app
+      - key: WEB_ORIGIN
+        value: https://tien-lo-di-menh.vercel.app
