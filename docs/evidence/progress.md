@@ -78,3 +78,8 @@ Kết nối Vercel và VPS/DNS/PostgreSQL staging, triển khai theo runbook, ki
 - BETTER_AUTH_SECRET và WORLD_PROXY_TOKEN sinh ngẫu nhiên, truyền bảo mật qua API; không in hoặc ghi vào Git. WEB_ORIGIN/BETTER_AUTH_URL trỏ web production. Vercel env HTTP 201 đã đồng bộ GAME_SERVER_URL, VITE_WS_URL, VITE_API_URL trống và shared proxy token dạng sensitive.
 - Chưa có DATABASE_URL trên Render: API đọc Vercel storage secrets trả 403 `challenge_required`. Cần chủ tài khoản xác minh trong Vercel và nhập connection string vào Render Environment. Không vượt qua yêu cầu xác minh hoặc tự thay database khác.
 - Còn cần redeploy web để đưa VITE_WS_URL vào bundle, kiểm Render migrations/readiness và nghiệm thu auth/WSS/two-client combat. Endpoint web công khai vẫn bị policy môi trường chặn, không dùng build READY để tuyên bố game chơi được.
+
+### Trạng thái cuối lượt kiểm tra token
+
+- Vercel redeploy `dpl_GmyxrVUDPJPLmo16xx9M8pMTjUqK` từ `work` đã `READY`, alias production `https://tien-lo-di-menh.vercel.app`; bản này build sau khi đồng bộ env Render/WSS/DB.
+- Render deployment đầu tiên `dep-dav94dk9v7es73fl4510` chuyển `update_failed`. Biến DATABASE_URL chưa được cấu hình; API logs trả 403 nên chưa có log xác nhận toàn bộ nguyên nhân của lần deploy thất bại. Cần nhập connection string vào Render, redeploy và kiểm logs/readiness; không tuyên bố server đang hoạt động.
