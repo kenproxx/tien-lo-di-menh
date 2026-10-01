@@ -83,3 +83,9 @@ Kết nối Vercel và VPS/DNS/PostgreSQL staging, triển khai theo runbook, ki
 
 - Vercel redeploy `dpl_GmyxrVUDPJPLmo16xx9M8pMTjUqK` từ `work` đã `READY`, alias production `https://tien-lo-di-menh.vercel.app`; bản này build sau khi đồng bộ env Render/WSS/DB.
 - Render deployment đầu tiên `dep-dav94dk9v7es73fl4510` chuyển `update_failed`. Biến DATABASE_URL chưa được cấu hình; API logs trả 403 nên chưa có log xác nhận toàn bộ nguyên nhân của lần deploy thất bại. Cần nhập connection string vào Render, redeploy và kiểm logs/readiness; không tuyên bố server đang hoạt động.
+
+## Theo dõi sau khi nhập DATABASE_URL — 2026-10-02
+
+- Render API env metadata xác nhận có key DATABASE_URL; không in giá trị. Deployment mới `dep-dav99qvavr4c738t601g` có trạng thái `live`, hoàn tất `2026-10-01T17:15:29Z`. Health check service vẫn `/readyz`.
+- Vercel production `dpl_GmyxrVUDPJPLmo16xx9M8pMTjUqK` có trạng thái READY; các preview mới cũng READY. Web `https://tien-lo-di-menh.vercel.app`, world `https://tien-lo-world.onrender.com`.
+- Truy cập trực tiếp web `/game/index.html` và world `/healthz`, `/readyz` từ môi trường bị proxy trả `Tunnel connection failed: 403 Forbidden` vì public host chưa được allowlist. Chưa kiểm chứng signup/login/WSS/combat end-to-end trên production. Trạng thái deploy của hai nền tảng thành công; không coi đó là nghiệm thu gameplay.
