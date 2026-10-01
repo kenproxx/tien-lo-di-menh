@@ -24,6 +24,14 @@ Vercel production đã có `GAME_SERVER_URL=https://tien-lo-world.onrender.com`,
 
 Kiểm signup/login, nhân vật, WebSocket ticket, hai client cùng thấy combat và reconnect trên URL production. Bằng chứng build `READY` không thay cho các smoke checks này.
 
+## Migration và seed production
+
+Docker image có `scripts/production-init.ts`; Render Docker Command dùng `./node_modules/.bin/tsx scripts/production-init.ts`. Entrypoint migrate, kiểm user/session/account/verification, rồi mở game server. Khi chỉnh service settings qua API, giữ `branch: work` và `/readyz`; deploy commit cụ thể để tránh dùng source main cũ.
+
+Seed production opt-in bằng RUN_PRODUCTION_SEED=1, SEED_DEMO_EMAIL và SEED_DEMO_PASSWORD tối thiểu 32 ký tự ngẫu nhiên. Script giữ tài khoản/nhân vật nếu đã tồn tại, không reset mật khẩu hoặc tài sản. Sau khi deploy live, đặt lại RUN_PRODUCTION_SEED=0. Không chạy seed local với mật khẩu mặc định hoặc đổi NODE_ENV để vượt guard.
+
+Seed đã tạo demo@tienlo.local và nhân vật Thanh Vân. Mật khẩu lấy bảo mật từ SEED_DEMO_PASSWORD trong Render Environment; không ghi vào chat/log/Git. Nếu đổi mật khẩu tài khoản đã tồn tại, cần quy trình reset riêng; sửa biến seed không đổi hash hiện có.
+
 ## Release gates chưa đạt
 
 Đọc docs/evidence/progress.md; catalog counts không chứng minh mọi feature đã hoàn thiện. Không tự hứa 500 CCU, không gọi mobile browser là APK/iOS verified. Web Vercel, database Neon và service Render đã tạo; deployment Vercel READY, Render live. Nghiệm thu end-to-end còn blocked bởi public-host network policy của môi trường kiểm thử.
