@@ -9,6 +9,7 @@ COPY --chown=node:node packages packages
 ARG NODE_USE_ENV_PROXY=0
 RUN --mount=type=secret,id=proxy_ca if test -f /run/secrets/proxy_ca; then export NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca; fi; pnpm install --frozen-lockfile
 COPY --chown=node:node apps/game-server apps/game-server
+COPY --chown=node:node scripts/production-init.ts scripts/production-init.ts
 USER node
 EXPOSE 3001
 CMD ["./node_modules/.bin/tsx", "apps/game-server/src/main.ts"]
